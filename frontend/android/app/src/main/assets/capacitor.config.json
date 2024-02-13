@@ -1,0 +1,6 @@
+{
+  "appId": "com.rohstore.android",
+  "appName": "rohstore",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

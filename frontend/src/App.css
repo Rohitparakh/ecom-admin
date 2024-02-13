@@ -1,0 +1,125 @@
+span.tag, .singleCat {
+  background: grey;
+  color:#fff;
+  padding: 5px 8px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+span.tag p {
+  display: inline-block;
+  margin: 0 2px 0 5px;
+  cursor: pointer;
+}
+
+.mt-10 {
+  margin: 15px 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+.index-tableContainer {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+.index-tableContainer .index-row {
+  position: relative;
+  margin: 0px 0px 12px;
+  padding-bottom: 10px;
+  flex-basis: 40%;
+}
+.index-tableContainer .index-row:nth-child(2n + 1) {
+  margin-right: 10%;
+}
+.index-tableContainer .index-row .index-rowKey {
+  position: relative;
+  color: rgb(126, 129, 140);
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.index-tableContainer .index-row .index-rowValue {
+  position: relative;
+  color: rgb(40, 44, 63);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+@media(min-width:1024px){
+  .productDetails{
+    display: flex;
+    gap:50px;
+  }
+}
+@media(max-width:1023px){
+  .fullDescription{
+    margin-bottom: 20px;
+  }
+}
+.productDetails{
+  /* max-width: 100vw; */
+}
+.fullDescription
+{
+min-width: 50vw;
+  /* flex: 0 0 100%; */
+}
+
+.catList{
+  margin:20px 0;
+  font-size: 15px;
+}
+
+.dividerBorder{
+  border-bottom: 1px solid rgb(234, 234, 236);
+}
+@media(min-width:1024px){
+  .fullDescription{
+    border-right: 1px solid rgb(234, 234, 236);
+  }
+}
+
+p.editReview{
+  cursor: pointer;
+}
+
+.editReviewHolder{
+  position: fixed;
+  left:45%;
+  top:45%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+input {
+  width: 100%;
+}
